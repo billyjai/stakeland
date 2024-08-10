@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "obs-automation"
+version = "0.1.0"
+description = ""
+authors = ["billylam <billy.lam@crypto.com>"]
+readme = "README.md"
+packages = [{include = "obs_automation"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.3.2"
+pytest-bdd = "^6.1.1"
+appium-python-client = "^2.11.1"
+pyhamcrest = "^2.0.4"
+pyyaml = "^6.0"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,26 @@
+platform: &platform
+    platform: android
+
+device_config: &device_config
+    ios:
+        platformName: 'ios'
+        platformVersion: '13.5'
+        deviceName: 'iPhone 11 Pro MT'
+        automationName: 'XCUITest'
+        appPackage: ''
+        appActivity: ''
+        noReset: True
+        folder: '/Users/username/Library/Developer/Xcode/DerivedData/WordPress-bgx/Build/Products/Debug-iphonesimulator/WordPress.app'
+    android:
+        platformName: 'android'
+        platformVersion: '12'
+        deviceName: 'R5CT31Z18ZE'
+        automationName: 'uiautomator2'
+        appPackage: 'hko.MyObservatory_v1_0'
+        app: '/Users/billylam/Desktop/apk/myobs.apk'
+        noReset: False
+        fullReset: True
+
+production:
+    <<: *platform
+    <<: *device_config
